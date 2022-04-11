@@ -1,6 +1,48 @@
-body{
+body {
     padding: 0;
     margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+div.first {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+div.first ~ div {
+    border-left: 10px solid crimson;
+}
+
+div.first.most-inner {
+    border-radius: 50%;
+}
+
+div.first.most-inner::before {
+    content: "A";
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+
+    background-color: limegreen;
+}
+
+div.first.most-inner::after {
+    content: "B";
+}
+
+div.first.most-inner:hover {
+    background-color: black;
+}
+
+body > div.first, 
+div.first.most-inner {
+    border-bottom: 10px solid white;
 }
 
 div {
