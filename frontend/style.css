@@ -79,62 +79,69 @@ div.first.most-inner {
     border-bottom: 10px solid white;
 }
 
-div {
+body > div {
     height: 100vh;
     width: 100vh;
-    background-color: black;
+    background-color: chocolate;
 }
 
-div > div {
+body > div > div {
     height: 90vh;
     width: 90vh;
     background-color: yellow;
 }
     
-div > div > div {
+body > div > div > div {
     height: 80vh;
     width: 80vh;
     background-color: aqua;
 }
 
-div > div > div > div {
+body > div > div > div > div {
     height: 70vh;
     width: 70vh;
     background-color: blueviolet;
 }
 
-div > div > div > div > div {
+body > div > div > div > div > div {
     height: 60vh;
     width: 60vh;
     background-color: gold;
 }
 
-div > div > div > div > div > div {
+body > div > div > div > div > div > div {
     height: 50vh;
     width: 50vh;
     background-color: green;
 }
 
-div > div > div > div > div > div > div {
+body > div > div > div > div > div > div > div {
     height: 40vh;
     width: 40vh;
     background-color: red;
 }
 
-div > div > div > div > div > div > div > div {
+body > div > div > div > div > div > div > div > div {
     height: 30vh;
     width: 30vh;
     background-color: orange;
 }
 
-div > div > div > div > div > div > div > div > div {
+body > div > div > div > div > div > div > div > div > div {
     height: 20vh;
     width: 20vh;
     background-color: indigo;
 }
 
-div > div > div > div > div > div > div > div > div > div {
+body > div > div > div > div > div > div > div > div > div > div {
     height: 10vh;
     width: 10vh;
     background-color: silver;
+}
+
+body > div:nth-child(3), 
+body > div:nth-child(3) div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
